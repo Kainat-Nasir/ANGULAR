@@ -1,0 +1,15 @@
+.product{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    float: left;
+    margin:5px;
+    color:blue;
+    padding: 5px;
+    text-align: center;
+    font-size: 9px;
+    /* text-wrap: nowrap; */
+    
+}
+
+
+

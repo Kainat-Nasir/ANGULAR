@@ -1,0 +1,38 @@
+
+    <div>
+    <select id="select" (change)="DisplaySelectedValue($event, 'UserID')">
+        <option  disabled selected value="All">User id</option>
+        <option value="All">All</option>
+        <option *ngFor="let id of user_id" [value]="id">{{id}}</option>
+        
+    </select>
+ </div>
+
+ <div>
+    <select id="select2" (change)="DisplaySelectedValue($event, 'Completed')" >
+        <option disabled selected value="All">completed</option>
+        <option value="All">All</option>
+        <option value=1>True</option>
+        <option value=0>False</option>
+    </select>
+ </div>
+
+<div class="row">
+    <div class="container col-4" *ngFor="let items of selectedproduct">
+        <div class="product">
+            <h5>
+                {{items.title}}
+            </h5>
+            <p>
+                {{items.userId}}
+            </p>
+            <p>
+                {{items.completed}}
+            </p>
+        </div>
+    
+    
+     </div>    
+
+</div>
+
